@@ -1,2 +1,2 @@
-# christmas-namedraw
-Put names in a hat, draw your Christmas buddy
+# namedraw
+Christmas name draw 

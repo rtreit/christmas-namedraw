@@ -1,0 +1,6 @@
+{
+    "client_id" : "97f01988-b110-4a78-b422-ad777b7ffae3",
+    "redirect_uri" : "http://localhost:8076",
+    "scopes" : "offline_access openid profile Files.ReadWrite Mail.Send",
+    "ipfile" : "refresh.txt"      
+}
