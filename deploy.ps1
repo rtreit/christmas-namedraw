@@ -107,4 +107,4 @@ if ($LASTEXITCODE -ne 0) { throw "Failed to deploy code." }
 
 Write-Host "Deployment Complete!"
 Write-Host "App URL: https://$AppName.azurewebsites.net"
-Write-Host "IMPORTANT: Update your Azure AD App Registration to allow redirect URI: https://$AppName.azurewebsites.net/getAToken (if applicable) or ensure the existing Redirect URI matches."
+Write-Host "NOTE: The app uses the refresh token from your local 'data/refresh_token.json'. If authentication fails, run 'scripts/cache_refresh_token.py' locally and redeploy."

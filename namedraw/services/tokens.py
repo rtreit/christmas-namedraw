@@ -17,18 +17,23 @@ class TokenCache:
     path: Path
 
     def read_refresh_token(self) -> str:
-        # Try environment variable first
+        # Try file first (it might have a newer token than the env var)
+        if self.path.exists():
+            try:
+                with self.path.open("r", encoding="utf-8") as handle:
+                    data = json.load(handle)
+                return data["refresh_token"]
+            except Exception:
+                pass  # Fallback to env var if file is corrupt
+
+        # Try environment variable
         env_token = os.getenv("REFRESH_TOKEN")
         if env_token:
             return env_token
 
-        if not self.path.exists():
-            raise FileNotFoundError(
-                f"Refresh token cache '{self.path}' is missing. Run scripts/cache_refresh_token.py to generate it."
-            )
-        with self.path.open("r", encoding="utf-8") as handle:
-            data = json.load(handle)
-        return data["refresh_token"]
+        raise FileNotFoundError(
+            f"Refresh token cache '{self.path}' is missing. Run scripts/cache_refresh_token.py to generate it."
+        )
 
     def save_refresh_token(self, refresh_token: str) -> None:
         self.path.parent.mkdir(parents=True, exist_ok=True)
