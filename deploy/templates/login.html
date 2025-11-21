@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}Login - Buddy's Name Draw{% endblock %}
+
+{% block body %}
+<div class="canvas" style="display: flex; justify-content: center; align-items: center; min-height: 60vh;">
+    <div class="control-panel" style="max-width: 400px; width: 100%;">
+        <div class="stage-header" style="margin-bottom: 2rem;">
+            <h1>Elf Checkpoint</h1>
+            <p>What's the secret password?</p>
+        </div>
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div style="background: rgba(239, 68, 68, 0.2); border: 1px solid #ef4444; color: #fca5a5; padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; text-align: center;">
+                    {{ messages[0] }}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        <form method="POST" action="/login">
+            <div style="margin-bottom: 1.5rem; text-align: left;">
+                <label for="username" style="color: white; display: block; margin-bottom: 0.5rem; font-weight: bold;">Username</label>
+                <input type="text" id="username" name="username" class="scenario-select" placeholder="Elf Name" required autofocus>
+            </div>
+
+            <div style="margin-bottom: 2rem; text-align: left;">
+                <label for="password" style="color: white; display: block; margin-bottom: 0.5rem; font-weight: bold;">Password</label>
+                <input type="password" id="password" name="password" class="scenario-select" placeholder="Secret Code" required>
+            </div>
+
+            <button type="submit" class="big-red-button" style="width: 100%;">Enter Workshop</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

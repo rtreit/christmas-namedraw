@@ -1,0 +1,34 @@
+[
+  {
+    "id": "default",
+    "name": "Elf Stockings",
+    "subject": "You did it! {scenario_name}",
+    "template_body": "<body style=\"font-family: 'Segoe UI', sans-serif; color:#0f5132; background:#fffbe6;\">\n  <div style=\"text-align:center;padding:32px;\">\n    <img src=\"https://cdn.costumewall.com/wp-content/uploads/2016/09/buddy-the-elf-costume.jpg?w=640\" alt=\"Buddy the Elf\" style=\"max-width: 220px; border-radius: 12px; box-shadow:0 12px 25px rgba(0,0,0,0.2);\"/>\n    <h1 style=\"color:#0f5132;\">It's Christmas Time {drawer_name}!!!</h1>\n    <p style=\"font-size:18px;\">Buddy masked the name to prevent spoilers.</p>\n    <p style=\"margin:28px 0 16px;\">Tap once to open a draft note\u23e4the first line spells out your buddy. Close the draft after reading.</p>\n    <a href=\"{reveal_link}\" style=\"display:inline-block;padding:14px 26px;background:#d5275a;color:#fff;border-radius:999px;font-weight:bold;text-decoration:none;\">Reveal My Buddy</a>\n    <p style=\"font-size:14px;margin-top:24px;color:#0f5132;\">Backup plan: paste this snow code into any Base64 decoder:</p>\n    <code style=\"display:inline-block;padding:8px 16px;background:#fff;border-radius:12px;font-size:13px;letter-spacing:1px;\">{encoded_name}</code>\n  </div>\n</body>",
+    "participants": [
+      "Kim",
+      "Randy",
+      "Elise",
+      "Grace",
+      "Charlotte",
+      "Lucy",
+      "Devon"
+    ]
+  },
+  {
+    "id": "b41efc24-6ff9-46f5-91cf-c978fd66bfa8",
+    "name": "Elf Gift",
+    "subject": "You did it! {scenario_name}",
+    "template_body": "<body style=\"font-family: 'Segoe UI', sans-serif; color:#0f5132; background:#fffbe6;\">\n  <div style=\"text-align:center;padding:32px;\">\n    <img src=\"https://cdn.costumewall.com/wp-content/uploads/2016/09/buddy-the-elf-costume.jpg?w=640\" alt=\"Buddy the Elf\" style=\"max-width: 220px; border-radius: 12px; box-shadow:0 12px 25px rgba(0,0,0,0.2);\"/>\n    <h1 style=\"color:#0f5132;\">It's Christmas Time {drawer_name}!!!</h1>\n    <p style=\"font-size:18px;\">Buddy masked the name to prevent spoilers.</p>\n    <p style=\"margin:28px 0 16px;\">Tap once to open a draft note\u23e4the first line spells out your buddy. Close the draft after reading.</p>\n    <a href=\"{reveal_link}\" style=\"display:inline-block;padding:14px 26px;background:#d5275a;color:#fff;border-radius:999px;font-weight:bold;text-decoration:none;\">Reveal My Buddy</a>\n    <p style=\"font-size:14px;margin-top:24px;color:#0f5132;\">Backup plan: paste this snow code into any Base64 decoder:</p>\n    <code style=\"display:inline-block;padding:8px 16px;background:#fff;border-radius:12px;font-size:13px;letter-spacing:1px;\">{encoded_name}</code>\n  </div>\n</body>",
+    "participants": [
+      "Kim",
+      "Randy",
+      "Elise",
+      "Grace",
+      "William",
+      "Eleanor",
+      "Charlotte",
+      "Lucy",
+      "Devon"
+    ]
+  }
+]

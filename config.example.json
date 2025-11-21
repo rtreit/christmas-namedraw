@@ -1,0 +1,10 @@
+{
+  "client_id": "00000000-0000-0000-0000-000000000000",
+  "redirect_uri": "http://localhost:8076",
+  "scopes": "offline_access openid profile https://graph.microsoft.com/Mail.Send",
+  "sender_upn": "buddythechristmaself@outlook.com",
+  "scenario_name": "Christmas Morning Elf Gift",
+  "participant_file": "data/participants.json",
+  "token_cache_file": "data/refresh_token.json",
+  "tenant": "common"
+}

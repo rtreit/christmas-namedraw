@@ -1,0 +1,5 @@
+[
+  {"name": "Buddy", "email": "buddy@example.com", "exclusions": ["Jovie"]},
+  {"name": "Jovie", "email": "jovie@example.com", "exclusions": []},
+  {"name": "Papa Elf", "email": "papa@example.com", "exclusions": ["Buddy"]}
+]
